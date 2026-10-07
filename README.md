@@ -30,7 +30,7 @@ Welcome to the ultimate curated directory of **cloud technical documentation pla
 
 **Key Market Insights:**
 - 🚀 **Mintlify** is the **fastest-growing documentation platform**, providing AI-native search and automated OpenAPI rendering for modern API-first startups.
-- 🦖 **Docusaurus** leads open-source static site generators with **66K+ GitHub stars**, powering React Native, Meta, and thousands of production docs.
+- 🦖 **Docusaurus** leads open-source static site generators with **66K+ GitHub_Stars**, powering React Native, Meta, and thousands of production docs.
 - 🎯 **OpenAPI / Swagger** remains the industry standard for API contracts and interactive "Try-It-Out" documentation consoles.
 
 ---
@@ -65,7 +65,7 @@ The global technical documentation and developer portal software market is estim
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[Docusaurus](https://github.com/facebook/docusaurus)** [![Stars](https://img.shields.io/github/stars/facebook/docusaurus?style=social&color=white)](https://github.com/facebook/docusaurus/stargazers)  
   **Static site generator for documentation**, MIT licensed. **66,430+ Stars**. React-based static site generator with MDX support, versioning, i18n, and built-in search. Used by React Native, Meta, and thousands of tech teams. 🦖
@@ -126,7 +126,7 @@ Contributions are welcome! Follow these steps to submit new documentation platfo
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact Stars Count badge, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Count badge, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
