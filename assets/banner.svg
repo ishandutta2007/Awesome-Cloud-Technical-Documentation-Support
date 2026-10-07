@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Dynamic Pulse Animations -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.05); }
+      }
+      @keyframes dashFlow {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+      .floating-bg { animation: floatSlow 8s ease-in-out infinite; transform-origin: center; }
+      .glowing-orb { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .data-stream { stroke-dasharray: 10, 15; animation: dashFlow 20s linear infinite; }
+      .particle { animation: floatParticle 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="350" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Animated Dynamic Background Elements -->
+  <g class="glowing-orb">
+    <circle cx="150" cy="80" r="180" fill="url(#glowGrad)" />
+    <circle cx="1050" cy="270" r="220" fill="url(#glowGrad)" />
+  </g>
+
+  <!-- Network & Grid Graphic Overlay -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+  </g>
+
+  <!-- Flow Data Streams in Background (Behind Text) -->
+  <path class="data-stream" d="M 50 300 Q 300 200 600 300 T 1150 200" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.3" />
+  <path class="data-stream" d="M 100 50 Q 400 180 800 50 T 1100 120" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.25" />
+
+  <!-- Background Floating Tech Badges (Non-interfering) -->
+  <g class="floating-bg" opacity="0.15">
+    <rect x="80" y="40" width="90" height="35" rx="8" fill="#ffffff" />
+    <rect x="1020" y="50" width="100" height="35" rx="8" fill="#ffffff" />
+    <rect x="980" y="250" width="110" height="35" rx="8" fill="#ffffff" />
+    <rect x="70" y="240" width="95" height="35" rx="8" fill="#ffffff" />
+  </g>
+
+  <!-- Foreground Title and Subtitle Container -->
+  <g text-anchor="middle">
+    <!-- Category Pill -->
+    <g transform="translate(600, 65)">
+      <rect x="-140" y="-18" width="280" height="34" rx="17" fill="rgba(99, 102, 241, 0.2)" stroke="#6366f1" stroke-width="1.5" />
+      <text fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5" y="4">
+        CLOUD DOCS &amp; DEV PORTALS 📚
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="145" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-0.5">
+      Awesome Cloud Technical Documentation
+    </text>
+
+    <!-- Subtitle Line 2 -->
+    <text x="600" y="195" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800">
+      &amp; Support Ecosystem 🛠️ ⚡
+    </text>
+
+    <!-- Tagline Subtitle -->
+    <text x="600" y="245" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="0.5">
+      Curated Guide to Developer Hubs • Docs-as-Code • OpenAPI Renderers • Knowledge Bases
+    </text>
+
+    <!-- Bottom Metric Pills -->
+    <g transform="translate(600, 290)">
+      <text fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">
+        🚀 Commercial SaaS • 🔓 Open-Source Frameworks • 📈 Market Intelligence &amp; Ratings
+      </text>
+    </g>
+  </g>
+</svg>
